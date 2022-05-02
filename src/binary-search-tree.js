@@ -55,23 +55,35 @@ class BinarySearchTree {
   }
 
   find(data) {
+    let current = this.isRoot;
+
+    while (current.data !== data) {
+
+      if (data < current.data) {
+        current = current.left;
+      } else {
+        current = current.right;
+      }
+      if (current === null) {
+        return null;
+      }
+    }
+    
+    return current;
+
 
     // return findWithin(this.isRoot, data);
+
     // function findWithin(node, data) {
-    //   if (!node) {
+    //   if (node === null) {
     //     return null;
-    //   }
-    //   if (!node.left) {
-    //     node = node.right;
+    //   } else if (data < node.data) {
+    //     return this.findWithin(node.left, data);
+    //   } else if (data > node.data) {
+    //     return this.findWithin(node.right, data);
+    //   } else {
     //     return node;
     //   }
-    //   if (!node.right) {
-    //     node = node.left;
-    //     return node;
-    //   }
-    //   return data < node.data
-    //     ? findWithin(node.left, data)
-    //     : findWithin(node.right, data);
     // }
   }
 

@@ -1,5 +1,4 @@
 const { NotImplementedError } = require('../extensions/index.js');
-
 // const { ListNode } = require('../extensions/list-node.js');
 
 /**
@@ -22,11 +21,63 @@ const { NotImplementedError } = require('../extensions/index.js');
  *   }
  * }
  */
-function removeKFromList(/* l, k */) {
-  throw new NotImplementedError('Not implemented');
-  // remove line with error and write your code here
+
+
+function removeKFromList(l, k) {
+  // if (!l) {
+  //   return null;
+  // }
+
+  // if (k < l.value) {
+  //   node.left = removeKFromList(l, data);
+  //   return node;
+  // } else {
+  //   if (!node.left && !node.right) {
+  //     return null;
+  //   }
+
+  //   if (!node.left) {
+  //     node = node.right;
+  //     return node;
+  //   }
+
+  //   if (!node.right) {
+  //     node = node.left;
+  //     return node;
+  //   }
+
+  //   let minFromRight = node.right;
+  //   while (minFromRight.left) {
+  //     minFromRight = minFromRight.left;
+  //   }
+
+  //   node.data = minFromRight.data;
+  //   node.right = removeNode(node.right, minFromRight.data);
+  //   return node;
+  // }
 }
 
 module.exports = {
-  removeKFromList
+  removeKFromList,
 };
+
+//   "next": {
+//     "next": {
+//       "next": {
+// -        "next": {
+// -          "next": {
+// -            "next": [null]
+// -            "value": 5
+// -          }
+// -          "value": 4
+// -        }
+// -        "value": 3
+// +        "next": [null]
+// +        "value": 5
+//       }
+// -      "value": 3
+// +      "value": 4
+//     }
+//     "value": 2
+//   }
+//   "value": 1
