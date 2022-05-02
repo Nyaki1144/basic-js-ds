@@ -60,24 +60,3 @@ function removeKFromList(l, k) {
 module.exports = {
   removeKFromList,
 };
-
-//   "next": {
-//     "next": {
-//       "next": {
-// -        "next": {
-// -          "next": {
-// -            "next": [null]
-// -            "value": 5
-// -          }
-// -          "value": 4
-// -        }
-// -        "value": 3
-// +        "next": [null]
-// +        "value": 5
-//       }
-// -      "value": 3
-// +      "value": 4
-//     }
-//     "value": 2
-//   }
-//   "value": 1
