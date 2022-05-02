@@ -17,6 +17,7 @@ class BinarySearchTree {
 
   add(data) {
     this.isRoot = addWithin(this.isRoot, data);
+    
     function addWithin(node, data) {
       if (!node) {
         return new Node(data);
@@ -68,7 +69,7 @@ class BinarySearchTree {
         return null;
       }
     }
-    
+
     return current;
 
 
